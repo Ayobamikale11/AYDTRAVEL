@@ -1,0 +1,489 @@
+/* Reset styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+   }
+   /* Body Styling */
+   body.landing-page {
+    background-color: #f4f4f4;
+    color: #3a2174;
+    font-size: 16px;
+   }
+   /* Header Styling */
+   .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: #3a2174;
+    color: white;
+   }
+   .header .left .logo {
+    height: 60px;
+   }
+   .navbar ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+    margin: 0;
+    padding: 0;
+   }
+   .navbar ul li {
+    position: relative;
+   }
+   .navbar ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 8px 15px;
+    font-weight: bold;
+    border-bottom: 3px solid transparent;
+    transition: color 0.3s ease, border-color 0.3s ease;
+   }
+   .navbar ul li a:hover {
+    color: #ff6f00;
+    border-color: #ff6f00;
+   }
+   /* Right Section */
+   .header .right {
+    text-align: right;
+   }
+   .header .right h2 {
+    font-size: 20px;
+    margin-bottom: 10px;
+   }
+   .header .right .link {
+    color: #ff6f00;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 10px 20px;
+    border: 2px solid #ff6f00;
+    border-radius: 30px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+   }
+   .header .right .link:hover {
+    background-color: #e65c00;
+    color: white;
+   }
+
+   .motto-bar {
+    text-align: center;
+    padding: 15px;
+    background: #555; 
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 3px solid #e76f51; /* Darker orange top border */
+    border-bottom: 3px solid #e76f51; /* Darker orange bottom border */
+  }
+  
+
+   /* Main Section */
+   .main-section {
+    text-align: center;
+    background-image: url('https://media.istockphoto.com/id/616903088/photo/airplane-flying-at-purple-sunset-over-mountains-and-sea.jpg?s=612x612&w=0&k=20&c=_1dX-GDnrIbh6lAdR2QpM2IEjKibwJddhsYktEHrfCU=');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    padding: 50px 20px; /* Reduced padding to shorten the background image length */
+    color: white;
+    animation: slideBackground 10s linear infinite; /* Apply the animation */
+   }
+   /* Keyframe animation to move the background */
+   @keyframes slideBackground {
+    0% {
+    background-position: 0% 0%; /* Starting position of the background */
+    }
+    50% {
+    background-position: 100% 50%; /* Midway point */
+    }
+    100% {
+    background-position: 0% 100%; /* End position */
+    }
+   }
+   .main-section h3 {
+    font-size: 36px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   }
+   .main-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+   }
+   .main-section .cta-image img {
+    max-width: 100%;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+   }
+   /* "Get Started" Button Styling */
+   .header .right .link {
+    background-color: #ff6f00; /* Orange */
+    color: white;
+    font-weight: bold;
+    padding: 10px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+   }
+   .header .right .link:hover {
+    background-color: #e65c00; /* Darker orange */
+    transform: scale(1.1); /* Scale effect */
+   }
+   /* Features Section */
+   .features {
+    background-color: #fff;
+    padding: 60px 20px;
+    text-align: center;
+    box-shadow: 0 -10px 10px rgba(0, 0, 0, 0.05);
+   }
+   .features h3 {
+    font-size: 32px;
+    font-weight: bold;
+    color: #3a2174;
+    margin-bottom: 40px;
+   }
+   .features-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 150px;
+    justify-content: center;
+   }
+   .feature {
+    background-color: #f4f4f4;
+    padding: 25px;
+    border-radius: 10px;
+    width: 280px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+   }
+   .feature:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+   }
+   .feature img {
+    width: 80px;
+    height: 80px;
+    margin-bottom: 20px;
+    border-radius: 50%;
+   }
+   .feature h4 {
+    font-size: 22px;
+    font-weight: bold;
+    color: #3a2174;
+    margin-bottom: 15px;
+   }
+   .feature p {
+    font-size: 16px;
+    color: #555;
+   }
+   
+/* CTA Section Styling */
+.cta {
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 60px; /* Added margin-bottom to create space between the button and footer */
+  }
+  
+  .cta-button {
+    display: inline-block;
+    padding: 15px 40px;
+    font-size: 18px;
+    font-weight: bold;
+    color: white;
+    background-color: #3a2174;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease, box-shadow 0.3s ease;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .cta-button:hover {
+    background-color: #ff6f00;
+    transform: translateY(-5px);
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+  }
+  
+  
+   /* Footer */
+   .footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    padding: 40px 0;
+    background-color: #3a2174;
+   }
+   .footer .social {
+    text-align: center;
+    padding-bottom: 25px;
+    color: white;
+   }
+   .footer .social a {
+    font-size: 24px;
+    color: white;
+    border: 2px solid #e65c00;
+    width: 40px;
+    height: 40px;
+    line-height: 38px;
+    display: inline-block;
+    text-align: center;
+    border-radius: 50%;
+    margin: 0 8px;
+    box-shadow: inset 0 0 10px #e65c00, 0 0 10px #e65c00;
+    transition: 0.3s ease;
+   }
+   .footer .social a:hover {
+    transform: scale(1.2) translateY(-10px);
+    color: #e65c00;
+    border: 2px solid #e65c00;
+   }
+   .footer ul {
+    margin-top: 0;
+    padding: 0;
+    font-size: 18px;
+    line-height: 1.6;
+    margin-bottom: 0;
+    text-align: center;
+   }
+   .footer ul li {
+    padding-left: 7px;
+   }
+   .footer ul li a {
+    text-decoration: none;
+    color: white;
+    border-bottom: 3px solid transparent;
+    transition: 0.3s ease;
+   }
+   .footer ul li a:hover {
+    border-bottom: 3px solid #e65c00;
+   }
+   .footer ul li {
+    display: inline-block;
+    padding: 0 15px;
+   }
+   .footer p {
+    margin-top: 15px;
+    text-align: center;
+    font-size: 12px;
+    color: white;
+   }
+   /* Smooth Scroll Effect */
+   html {
+    scroll-behavior: smooth;
+   }
+   /* Responsive Design */
+   @media (max-width: 480px) {
+    .header {
+    flex-direction: column;
+    text-align: center;
+    }
+    .destination-gallery .destination {
+    width: 100%;
+    }
+   }
+
+
+
+
+
+
+
+   
+
+/* Base Styling for Navbar */
+.navbar ul {
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar ul li a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+/* Mobile Specific Styling */
+@media screen and (max-width: 768px) {
+  .navbar {
+    position: fixed;
+    top: 0;
+    right: 0;
+    background-color: blueviolet;
+    width: 75%;
+    height: 100%;
+    box-shadow: -2px 0 5px rgba(0, 0, 0, 0.2);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 10;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+  }
+
+  .navbar ul {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .hamburger {
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    cursor: pointer;
+    z-index: 20;
+  }
+
+  .hamburger div {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+  }
+
+  .navbar.active {
+    transform: translateX(0);
+  }
+}
+
+/* Overlay Effect for Better Visibility */
+@media screen and (max-width: 768px) {
+  body.nav-open .navbar {
+    transform: translateX(0);
+  }
+
+  body.nav-open .hamburger div:nth-child(1) {
+    transform: rotate(45deg) translateY(8px);
+  }
+
+  body.nav-open .hamburger div:nth-child(2) {
+    opacity: 0;
+  }
+
+  body.nav-open .hamburger div:nth-child(3) {
+    transform: rotate(-45deg) translateY(-8px);
+  }
+}
+
+
+
+
+
+
+
+
+    /* Adjust the "Get Started" button for mobile */
+    .header .right .link {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    }
+    /* Adjust font sizes for mobile */
+    .main-section h3 {
+    font-size: 28px;
+    }
+    .main-section p {
+    font-size: 18px;
+    }
+    .features h3 {
+    font-size: 28px;
+    }
+    .cta h4 {
+    font-size: 22px;
+    }
+   
+
+
+   
+   /* Add the new responsive styles at the end of the CSS */
+   @media (max-width: 768px) {
+    /* Ensure the header and main section are visible on mobile */
+    .header {
+    padding: 20px 15px;
+    flex-direction: column;
+    text-align: center;
+    }
+    .header .left {
+    margin-bottom: 20px;
+    }
+    /* Navigation adjustments for mobile */
+    .navbar ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    }
+    .navbar ul li a {
+    font-size: 18px; /* Adjust font size for mobile */
+    }
+    /* Right section adjustments (Get Started Button) */
+    .header .right {
+    text-align: center;
+    width: 100%;
+    margin-bottom: 20px;
+    }
+    .header .right .link {
+    width: 100%;
+    padding: 15px 25px;
+    font-size: 18px;
+    margin-top: 20px; 
+    }
+    /* Main section adjustments */
+    .main-section {
+    padding: 50px 15px; /* Adjust padding to ensure content is visible */
+    background-position: center; /* Adjust background positioning */
+    }
+    .main-section h3 {
+    font-size: 28px;
+    margin-bottom: 10px;
+    }
+    .main-section p {
+    font-size: 18px;
+    margin-bottom: 20px;
+    }
+    /* Ensure the CTA image is responsive */
+    .main-section .cta-image img {
+    width: 100%;
+    max-width: 300px;
+    margin-top: 20px;
+    }
+    /* Features Section: Stack items vertically on mobile */
+    .features-container {
+    flex-direction: column;
+    align-items: center;
+    }
+    .feature {
+    width: 90%;
+    max-width: 320px;
+    margin-bottom: 20px;
+    }
+    /* Make sure the footer elements are well-spaced on mobile */
+    .footer ul {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    }
+    .footer .social a {
+    font-size: 24px; /* Increase icon size on mobile */
+    }
+    /* Ensure "Get Started" button fits on mobile */
+    .header .right .link {
+    width: 100%;
+    padding: 12px 20px;
+    font-size: 18px;
+    text-align: center;
+    }
+    .cta-button {
+    width: 100%;
+    padding: 14px 20px;
+    font-size: 18px;
+    }
+   }
+

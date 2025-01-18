@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>AYD International Travels</title>
+    <link rel="stylesheet" href="pages.css">
+    <script>
+        // Toggle the mobile menu
+        function toggleMenu() {
+            const navLinks = document.querySelector('.nav-links');
+            navLinks.classList.toggle('active');
+        }
+    </script>
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+            <div class="logo">
+                <a href="index.html">AYD International Travels</a>
+            </div>
+            <div class="hamburger" onclick="toggleMenu()">
+                <!-- Hamburger Icon -->
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-links">
+                <li><a href="index.html">Landing Page</a></li>
+                <li><a href="home.html">Home</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="privacy.html">Privacy Policy</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Motto Bar -->
+    <div class="motto-bar">
+        You will Achieve Your Dreams
+    </div>
+
+    <!-- Your page content -->
+    <div class="container">
+        <h1>Welcome to AYD International Travels!</h1>
+        <p>Your adventure begins here!</p>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 AYD International Travels. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
+

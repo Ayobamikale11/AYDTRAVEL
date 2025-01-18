@@ -1,0 +1,139 @@
+/* General Styles */
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+/* Navigation Bar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6a1b9a; /* Purple */
+    padding: 15px 30px;
+}
+
+.navbar .logo a {
+    color: white;
+    text-decoration: none;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    margin: 0;
+    padding: 0;
+}
+
+.nav-links li {
+    margin: 0 15px;
+}
+
+.nav-links li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    transition: color 0.3s ease;
+}
+
+.nav-links li a:hover {
+    color: #ff7043; /* Orange */
+}
+
+/* Hamburger Menu (for smaller screens) */
+.hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+.hamburger span {
+    background-color: white;
+    height: 3px;
+    width: 25px;
+    margin: 4px 0;
+    transition: 0.3s;
+}
+
+/* Motto Bar */
+.motto-bar {
+    text-align: center;
+    padding: 15px;
+    background: #555;
+    color: white;
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    border-top: 3px solid #e76f51; /* Darker orange top border */
+    border-bottom: 3px solid #e76f51; /* Darker orange bottom border */
+}
+
+/* Footer */
+footer {
+    background-color: #6a1b9a; /* Purple */
+    color: #fff;
+    text-align: center;
+    padding: 20px;
+    font-size: 14px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    /* Adjust Navbar */
+    .nav-links {
+        display: none;
+        flex-direction: column;
+        background-color: #6a1b9a;
+        width: 100%;
+        position: absolute;
+        top: 60px;
+        left: 0;
+        text-align: center;
+    }
+
+    .nav-links.active {
+        display: flex;
+    }
+
+    .nav-links li {
+        margin: 10px 0;
+    }
+
+    .hamburger {
+        display: flex;
+    }
+
+    .logo a {
+        font-size: 20px;
+    }
+
+    .motto-bar {
+        font-size: 16px;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Adjustments for Mobile */
+    .navbar {
+        padding: 10px 15px;
+    }
+
+    .logo a {
+        font-size: 18px;
+    }
+
+    .nav-links li a {
+        font-size: 16px;
+    }
+
+    .motto-bar {
+        font-size: 14px;
+        padding: 10px;
+    }
+
+    footer {
+        font-size: 12px;
+    }
+}
