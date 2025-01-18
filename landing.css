@@ -23,6 +23,12 @@
    .header .left .logo {
     height: 60px;
    }
+.navbar {
+    display: none; /* Hidden by default */
+}
+.navbar.active {
+    display: block; /* Show when toggled */
+}
    .navbar ul {
     display: flex;
     list-style: none;
