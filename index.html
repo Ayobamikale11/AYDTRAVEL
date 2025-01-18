@@ -8,7 +8,6 @@
   <title>AYD International Travel</title>
   <link rel="stylesheet" href="landing.css">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
-  <script src="path/to/your/script.js"></script> 
 </head>
 <body class="landing-page">
   <!-- Header with Navigation to Services -->
@@ -18,7 +17,7 @@
     </div>
     
     <!-- Navbar -->
-    <div class="navbar">
+    <div class="navbar" id="navbar">
       <ul>
         <li><a href="home.html">Home</a></li>
         <li><a href="aboutme.html">About</a></li>
@@ -87,10 +86,10 @@
   <!-- Footer -->
   <footer class="footer">
     <div class="social">
-      <a href="https://www.facebook.com/share/12D8TuhJ73E/?mibextid=wwXIfr"><i class="fa-brands fa-facebook"></i></a>
+      <a href="#"><i class="fa-brands fa-facebook"></i></a>
       <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-      <a href="https://x.com/achieve_your_d?s=21"><i class="fa-brands fa-twitter"></i></a>
-      <a href="https://www.instagram.com/ayd_travels_and_tours/profilecard/?igsh=bTJkZGF4ZDl0eTYx"><i class="fa-brands fa-instagram"></i></a>
+      <a href="#"><i class="fa-brands fa-twitter"></i></a>
+      <a href="#"><i class="fa-brands fa-instagram"></i></a>
     </div>
     <ul>
       <li><a href="#">FAQ</a></li>
@@ -102,8 +101,16 @@
     <p class="motto">You Shall Achieve Your Dreams</p>
     <p>&copy; 2025 AYD International Travel. All rights reserved.</p>
   </footer>
-  <script src="path\to\your\script.js"></script>
+
+  <!-- Embedded JavaScript -->
+  <script>
+    function toggleNav() {
+      const navbar = document.getElementById("navbar");
+      navbar.classList.toggle("active");
+    }
+  </script>
 </body>
 </html>
+
 
 
